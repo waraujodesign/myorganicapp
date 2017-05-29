@@ -1,11 +1,11 @@
 {
-  "name": "nearme-cms",
+  "name": "organicapp-cms",
   "version": "2.0.1",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ParsePlatform/parse-server-example"
+    "url": "https://github.com/waraujodesign/myorganicapp.git"
   },
   "license": "MIT",
   "dependencies": {

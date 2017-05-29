@@ -1,5 +1,5 @@
 {
-  "name": "nearme-cms",
+  "name": "organicapp-cms",
   "private": true,
   "dependencies": {
     "angular": "~1.5.0",
