@@ -10,18 +10,18 @@ var cookieSession = require('cookie-session');
 
 // Parse configuration
 var databaseUri = process.env.MONGO_URL;
-var publicServerUrl = process.env.PUBLIC_SERVER_URL || 'http://localhost:1337/parse';
-var serverUrl = process.env.SERVER_URL || 'http://localhost:1337/parse';
-var appId = process.env.APP_ID || 'myAppId';
-var masterKey = process.env.MASTER_KEY || 'myMasterKey';
-var restApiKey = process.env.REST_API_KEY || 'myRestApiKey';
-var appName = process.env.APP_NAME || 'My App Name';
+var publicServerUrl = process.env.PUBLIC_SERVER_URL || 'https://myorganicapp.herokuapp.com/parse';
+var serverUrl = process.env.SERVER_URL || 'https://myorganicapp.herokuapp.com/parse';
+var appId = process.env.APP_ID || 'heroku_rcf6b7kr.heroku_rcf6b7kr';
+var masterKey = process.env.MASTER_KEY || '9QB0F-EMMWYO0NZaFb80rV9eii_ZEDGg';
+var restApiKey = process.env.REST_API_KEY || '9QB0F-EMMWYO0NZaFb80rV9eii_ZEDGg';
+var appName = process.env.APP_NAME || 'Organicapp';
 
 // Mailgun configuration
-var apiKey = process.env.MAILGUN_API_KEY || 'MAILGUN_API_KEY';
-var domain = process.env.MAILGUN_DOMAIN || 'MAILGUN_DOMAIN';
-var fromAddress = process.env.MAILGUN_FROM_ADDRESS || 'MAILGUN_FROM_ADDRESS';
-var toAddress = process.env.MAILGUN_TO_ADDRESS || 'MAILGUN_TO_ADDRESS';
+var apiKey = process.env.MAILGUN_API_KEY || 'key-77d2d28c61553a681f18dda099aa4f61';
+var domain = process.env.MAILGUN_DOMAIN || 'organicapp.com.br';
+var fromAddress = process.env.MAILGUN_FROM_ADDRESS || 'Organicapp <contato@organicapp.com.br>';
+var toAddress = process.env.MAILGUN_TO_ADDRESS || 'contato@organicapp.com.br';
 
 // AWS S3 configuration
 var accessKeyId = process.env.AWS_ACCESS_KEY_ID;
@@ -36,7 +36,7 @@ if (accessKeyId && secretAccessKey && bucketName) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_rcf6b7kr:we160384@ds155841.mlab.com:55841/heroku_rcf6b7kr',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: appId,
   masterKey: masterKey,
