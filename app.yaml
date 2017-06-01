@@ -4,7 +4,7 @@ vm: true
 env_variables:
   # --REQUIRED--
   DATABASE_URI: mongodb://heroku_rcf6b7kr:we160384@ds155841.mlab.com:55841/heroku_rcf6b7kr
-  APP_ID: heroku_rcf6b7kr.heroku_rcf6b7kr
+  APP_ID: organicapp
   MASTER_KEY: u7hqdsUghj93A0uR0kMMl8mZ4Ys3G5cO
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
