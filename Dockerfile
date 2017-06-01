@@ -7,13 +7,13 @@ RUN npm install
 
 ADD . /app
 
-ENV SERVER_URL http://nearme.quanlabs.com/parse
-ENV PUBLIC_SERVER_URL http://nearme.quanlabs.com/parse
-ENV APP_NAME NearmeApp
-ENV MAILGUN_API_KEY key-004454825826125a446123cf1ca7d3c3
-ENV MAILGUN_DOMAIN quanlabs.com
-ENV MAILGUN_FROM_ADDRESS 'QuanLabs <info@quanlabs.com>'
-ENV MAILGUN_TO_ADDRESS 'info@quanlabs.com'
+ENV SERVER_URL https://myorganicapp.herokuapp.com/parse
+ENV PUBLIC_SERVER_URL https://myorganicapp.herokuapp.com/parse
+ENV APP_NAME OrganicApp
+ENV MAILGUN_API_KEY key-77d2d28c61553a681f18dda099aa4f61
+ENV MAILGUN_DOMAIN organicapp.com.br
+ENV MAILGUN_FROM_ADDRESS 'Organicapp <contato@organicapp.com.br>'
+ENV MAILGUN_TO_ADDRESS 'contato@organicapp.com.br'
 
 CMD [ "npm", "start" ]
 
